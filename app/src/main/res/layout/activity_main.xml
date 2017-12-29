@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kashasha.rvm.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+   <EditText
+
+       android:id="@+id/phone"
+       android:inputType="number"
+       android:layout_marginTop="16dp"
+       android:layout_marginLeft="8dp"
+       android:layout_marginRight="8dp"
+       android:textAlignment="center"
+       android:hint="Enter your Phone Number"
+       android:layout_width="match_parent"
+       android:background="@drawable/shape"
+       android:layout_height="40dp" />
+    <Button
+        android:id="@+id/action"
+        android:elevation="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Find Points"
+        android:textColor="#000000"
+        android:textStyle="bold"
+
+
+        android:background="@drawable/shape2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:layout_marginTop="64dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <android.support.v7.widget.CardView
+        android:clickable="true"
+        android:id="@+id/points"
+        android:visibility="gone"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+android:background="#FF8C00"
+
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:weightSum="1">
+                <TextView
+                    android:textColor="#000000"
+
+                    android:textStyle="bold|italic"
+                    android:textSize="20sp"
+                    android:text="Your Points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="16dp"
+                android:textSize="18dp"
+                android:id="@+id/points_numbers"
+
+                android:layout_gravity="center"
+                android:text="You have 50 Points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <include layout="@layout/line"
+        android:visibility="gone"
+        android:id="@+id/line"
+        />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/message"
+        android:layout_marginTop="16dp"
+        android:textStyle="italic"
+        android:layout_marginBottom="16dp"
+        android:text="Your Benefits"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"/>
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/careem"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:visibility="gone"
+        android:clickable="true"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_height="120dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+
+
+            android:layout_width="match_parent"
+            android:background="#90CAF9"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:weightSum="1">
+            <TextView
+                android:textColor="#000000"
+                android:textStyle="bold|italic"
+                android:textSize="20sp"
+                android:text="Careem Trips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:text="Redeem Your Points to get Careem Trips."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+</ScrollView>
+
